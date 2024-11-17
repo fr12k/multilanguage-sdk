@@ -1,0 +1,33 @@
+name: Reusable ContainifyCI workflow
+
+on:
+  workflow_call:
+    secrets:
+      CONTAINIFYCI_DOCKER_TOKEN:
+        required: true
+      CONTAINIFYCI_RELEASE_TOKEN:
+        required: true
+      CONTAINIFYCI_CI_SSH_PRIVATE_KEY:
+        required: true
+
+jobs:
+  build-go:
+    name: Build Go ${{ matrix.runtime }}
+    uses: containifyci/engine-ci/.github/workflows/engine-ci-workflow.yml@main
+    secrets: 
+      CONTAINIFYCI_DOCKER_TOKEN: ${{ secrets.CONTAINIFYCI_DOCKER_TOKEN }}
+      CONTAINIFYCI_RELEASE_TOKEN: ${{ secrets.CONTAINIFYCI_RELEASE_TOKEN }}
+      CONTAINIFYCI_CI_SSH_PRIVATE_KEY: ${{ secrets.CONTAINIFYCI_CI_SSH_PRIVATE_KEY }}
+    strategy:
+      matrix:
+        runtime: [docker, podman]
+    permissions:
+      contents: write # for checkout
+      id-token: write # for authenticating to Google Cloud Platform
+      pull-requests: write # for updating pr
+    with:
+      dockerhub_user: "containifyci"
+      runtime: ${{ matrix.runtime }}
+      install_binary: true
+      remote_debug: true
+      remote_debug_user: "fr12k"

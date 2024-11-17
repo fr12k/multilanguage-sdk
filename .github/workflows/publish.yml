@@ -1,0 +1,20 @@
+name: Publish
+
+on:
+  workflow_dispatch:
+  release:
+    types: [published]
+
+concurrency:
+  group: multilanguage_sdk_publish_${{ github.ref_name }}
+  cancel-in-progress: true
+
+permissions:
+  contents: write # for checkout
+
+jobs:
+  publish:
+    uses: ./.github/workflows/artifact.yaml
+    secrets: inherit
+    with:
+      tag_name: ${{ github.event.release.tag_name }}
