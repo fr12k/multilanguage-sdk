@@ -1,19 +1,19 @@
-uniffi::setup_scaffolding!();
-use uniffi::export;
+// uniffi::setup_scaffolding!();
+// use uniffi::export;
 use ffi_support::{rust_string_to_c};
 
-#[export]
+// #[export]
 pub fn greet(name: String) -> String {
     format!("Hello, {}!", name)
 }
 
 #[no_mangle]
-#[export]
+// #[export]
 pub extern fn add_numbers(a: i32, b: i32) -> i32 {
     a + b
 }
 
-#[export]
+// #[export]
 pub extern fn http() -> String{
     let res = client();
     res

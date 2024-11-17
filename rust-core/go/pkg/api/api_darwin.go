@@ -2,8 +2,8 @@ package api
 
 /*
 #cgo CFLAGS: -I./
-#cgo darwin,arm64 LDFLAGS: -L./ -lrust_core_darwin_arm64 -framework Security -framework SystemConfiguration
-#cgo darwin,amd64 LDFLAGS: -L./ -lrust_core_darwin_amd64 -framework Security -framework SystemConfiguration
+#cgo darwin,arm64 LDFLAGS: -L./ -lrust_core_aarch64-apple-darwin -framework Security -framework SystemConfiguration
+#cgo darwin,amd64 LDFLAGS: -L./ -lrust_core_x86_64-apple-darwin -framework Security -framework SystemConfiguration
 #include "./bindings.h"
 #include <stdlib.h>
 */

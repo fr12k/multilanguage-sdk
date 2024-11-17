@@ -2,10 +2,10 @@ package api
 
 /*
 #cgo CFLAGS: -I./
-#cgo linux,amd64,musl LDFLAGS: -L./ -lrust_core_linux_amd64_musl
-#cgo linux,amd64,gnu LDFLAGS: -L./ -lrust_core_linux_amd64_gnu
-#cgo linux,arm64,musl LDFLAGS: -L./ -lrust_core_linux_arm64_musl
-#cgo linux,arm64,gnu LDFLAGS: -L./ -lrust_core_linux_arm64_gnu
+#cgo linux,amd64,musl LDFLAGS: -L./ -lrust_core_x86_64-unknown-linux-musl
+#cgo linux,arm64,musl LDFLAGS: -L./ -lrust_core_aarch64-unknown-linux-musl
+#cgo linux,amd64,gnu LDFLAGS: -L./ -lrust_core_x86_64-unknown-linux-gnu
+#cgo linux,arm64,gnu LDFLAGS: -L./ -lrust_core_aarch64-unknown-linux-gnu
 #include "./bindings.h"
 #include <stdlib.h>
 */

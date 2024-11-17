@@ -2,12 +2,11 @@ extern crate cbindgen;
 
 use std::env;
 use std::path::PathBuf;
-use cbindgen::Config;
 
 fn main() {
 
     println!("cargo:rerun-if-changed=src/rust-core.udl");
-    uniffi::generate_scaffolding("src/rust-core.udl").unwrap();
+    // uniffi::generate_scaffolding("src/rust-core.udl").unwrap();
 
     let crate_dir = env::var("CARGO_MANIFEST_DIR").unwrap();
     let config_path = PathBuf::from(&crate_dir).join("cbindgen.toml");
