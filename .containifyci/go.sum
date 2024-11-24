@@ -1,7 +1,7 @@
 github.com/bufbuild/protocompile v0.4.0 h1:LbFKd2XowZvQ/kajzguUp2DC9UEIQhIq77fZZlaQsNA=
 github.com/bufbuild/protocompile v0.4.0/go.mod h1:3v93+mbWn/v3xzN+31nwkJfrEpAUwp+BagBSZWx+TP8=
-github.com/containifyci/engine-ci/client v0.5.0 h1:1Z/6D+0yzb6JZ9fztDOwa5XuH17fyxqgjJ0vvsTCNb0=
-github.com/containifyci/engine-ci/client v0.5.0/go.mod h1:v/UhcMjArP4fWyv/LP+FMjD2vx2Cv2d8kC5T8bixBVI=
+github.com/containifyci/engine-ci/client v0.6.1 h1:pCz7WCAF9Ji9ao3oMeb1+9lIa6kobDqO6+SZ5bNKHf4=
+github.com/containifyci/engine-ci/client v0.6.1/go.mod h1:haGjIt54eOg8Ed5vzX/2FKKS+FP6xUXz0WcKTqpNw0U=
 github.com/containifyci/engine-ci/protos2 v0.5.0 h1:I/kHjXEhIkw4W82gahIF2xsP6QIDa4OOqU3niSmvu2k=
 github.com/containifyci/engine-ci/protos2 v0.5.0/go.mod h1:CN0ThY0/sAgBC59LDaY3ns9I+i6R6GaZx2kmEQLmipQ=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
@@ -58,8 +58,8 @@ google.golang.org/genproto/googleapis/rpc v0.0.0-20240814211410-ddb44dafa142 h1:
 google.golang.org/genproto/googleapis/rpc v0.0.0-20240814211410-ddb44dafa142/go.mod h1:UqMtugtsSgubUsoxbuAoiCXvqvErP7Gf0so0mK9tHxU=
 google.golang.org/grpc v1.67.1 h1:zWnc1Vrcno+lHZCOofnIMvycFcc0QRGIzm9dhnDX68E=
 google.golang.org/grpc v1.67.1/go.mod h1:1gLDyUQU7CTLJI90u3nXZ9ekeghjeM7pTDZlqFNg2AA=
-google.golang.org/protobuf v1.35.1 h1:m3LfL6/Ca+fqnjnlqQXNpFPABW1UD7mjh8KO2mKFytA=
-google.golang.org/protobuf v1.35.1/go.mod h1:9fA7Ob0pmnwhb644+1+CVWFRbNajQ6iRojtC/QF5bRE=
+google.golang.org/protobuf v1.35.2 h1:8Ar7bF+apOIoThw1EdZl0p1oWvMqTHmpA2fRTyZO8io=
+google.golang.org/protobuf v1.35.2/go.mod h1:9fA7Ob0pmnwhb644+1+CVWFRbNajQ6iRojtC/QF5bRE=
 gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405 h1:yhCVgyC4o1eVCa2tZl7eS0r+SDo693bJlVdllGtEeKM=
 gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405/go.mod h1:Co6ibVJAznAaIkqp8huTwlJQCZ016jof/cbN4VW5Yz0=
 gopkg.in/yaml.v3 v3.0.1 h1:fxVm/GzAzEWqLHuvctI91KS9hhNmmWOoWu0XTYJS7CA=
